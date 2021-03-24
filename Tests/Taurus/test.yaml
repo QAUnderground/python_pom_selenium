@@ -1,0 +1,11 @@
+execution:
+  - executor: selenium
+    concurrency: 1
+    ramp-up: 15s
+    hold-for: 2m
+    iterations: 1
+    scenario: search-test
+
+scenarios:
+  search-test:
+    script: ./Tests/searchtest.py
